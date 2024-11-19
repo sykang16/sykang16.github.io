@@ -91,7 +91,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="images_/crime_trend_over_years.png.png" alt="..." />
+                            <img class="img-fluid" src="images_/crime_trend_over_years.png" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
         </section>
 
 
-        <!-- Portfolio2(geographic) Section-->
+        <!-- geographic Section-->
         <section class="page-section geographic" id="geographic">
             <div class="container">
                 <!-- Portfolio Section Heading-->
@@ -142,6 +142,41 @@
                 </div>
             </div>
         </section>
+
+        <!-- advanced Section-->
+        <section class="page-section advanced" id="advanced">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Advanced Analysis</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="images_/daily_crime_counts.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="images_/crime_forcasting_w_Arima.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
 
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
@@ -202,7 +237,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; IE6600 Project 2023</small></div>
+            <div class="container"><small>Copyright &copy; IE6600 Project 2024</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -415,6 +450,85 @@
                                         <ul>Insights</ul>
                                         <li>“BROADWAY"and"FIGUEROA ST" are the most common cross streets where crimes occur.</li>
                                         <li>This pattern indicates potential high-traffic areas that might require enhanced law enforcement presence or community safety measures.</li>
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Daily Crime Counts</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="images_/daily_crime_counts.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+                                        <ul>A time series analysis was conducted on the daily crime counts dataset from January 2020 to October 2024. The time series plot shows variability in crime counts over time, with noticeable
+                                            seasonality and trends. However, a downward trend is evident in the latter part of 2024.
+                                           </ul>
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Crime Forcasting with ARIMA</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="images_/crime_forcasting_w_Arima.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+                                        The ARIMA model was used to forecast daily crime counts for the next 30 days, from late October 2024 to late November 2024.
+                                        <ul>Key Observations</ul>
+                                        <li>Forecasted values indicate a continued downward trend in daily crime counts.</li>
+                                        <li>Confidence intervals were included to indicate the reliability of the predictions.</li>
+                                        <li>The graph : Forecast of Crime Counts with Confidence Intervals.</li>
+
+                                        <ul>Conclusions</ul>
+                                        <li>The ARIMA(1,1,1) model captured the crime trends effectively and provided reliable short-term forecasts.</li>
+                                        <li>Crime counts are predicted to remain low in the near future, which aligns with the recent observed trend in 2024.</li>
+                                        <li>Confidence intervals highlight the potential uncertainty in predictions, emphasizing the need for continuous monitoring.</li>
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
